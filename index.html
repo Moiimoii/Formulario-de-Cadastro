@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+
+</head>
+<body>
+
+<header>
+    <h1>Cadastro de Usuário</h1>
+</header>
+
+<main>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+           
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0">
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+            <label>Gênero:</label>
+            <input class="opcoes" type="radio" id="masc" name="genero" value="masculino">
+            <label for="masc">Masculino</label>
+            <input class="opcoes" type="radio" id="fem" name="genero" value="feminino">
+            <label for="fem">Feminino</label>
+           <hr>
+            <label>Interesses:</label>
+            <input class="opcoes" type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+            <input class="opcoes" type="checkbox" id="esportes" name="interesses" value="esportes">
+            <label for="esportes">Esportes</label>
+            <hr>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione</option>
+                <option value="ba">Bahia</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </select>
+            
+
+            <button type="submit">Cadastrar</button>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <h2>
+        Github:
+        <a href="https://github.com/Moiimoii" target="_blank">
+            github.com/Moiimoii
+        </a>
+    </h2>
+</footer>
+
+</body>
+</html>
